@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="app">
+        <h1>English Communication Practice</h1>
+        <div id="audio-form">
+            <input type="file" id="audio-input" accept="audio/*">
+            <button onclick="transcribeAudio()">Submit Audio</button>
+        </div>
+        <div id="text-form">
+            <input type="text" id="text-input" placeholder="Enter your text here">
+            <button onclick="submitText()">Submit Text</button>
+        </div>
+        <div id="transcription-result">
+            <p><strong>Transcript:</strong> <span id="transcript-text"></span></p>
+        </div>
+        <div id="response-result">
+            <p><strong>Bot Response:</strong> <span id="response-text"></span></p>
+        </div>
+        <div id="follow-up-questions"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
