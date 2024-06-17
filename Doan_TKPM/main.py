@@ -8,7 +8,7 @@ import logging
 app = Flask(__name__)
 
 # Path to your service account key file for Speech-to-Text
-service_account_path = r'D:\khtn\ThietkePM\Doan_TKPM\Doan_TKPM\speech-to-text.json'
+service_account_path = r''
 
 # Configure Google Speech-to-Text API with direct credentials
 credentials = service_account.Credentials.from_service_account_file(service_account_path)
